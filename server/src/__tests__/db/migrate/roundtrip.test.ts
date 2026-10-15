@@ -44,6 +44,7 @@ const KEY_MONTHLY_USAGE_FILENAME = '20260914_000001_key_monthly_usage.ts';
 const QUOTA_SNAPSHOT_FRESHNESS_FILENAME = '20260915_000001_quota_snapshot_freshness.ts';
 const CUSTOM_ENDPOINT_GROUP_LABEL_FILENAME = '20260930_000001_custom_endpoint_group_label.ts';
 const SEARCH_ENGINES_FILENAME = '20261013_000001_search_engines.ts';
+const KEY_LAST_HEALTHY_AT_FILENAME = '20261014_000001_key_last_healthy_at.ts';
 
 interface SchemaRow {
   type: string;
@@ -134,6 +135,7 @@ describe('migration round trip', () => {
         QUOTA_SNAPSHOT_FRESHNESS_FILENAME,
         CUSTOM_ENDPOINT_GROUP_LABEL_FILENAME,
         SEARCH_ENGINES_FILENAME,
+        KEY_LAST_HEALTHY_AT_FILENAME,
       ]);
     } finally {
       db.close();
